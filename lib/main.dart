@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_challenge/screens/screens.dart';
 
 void main() {
-  runApp(App());
+  runApp(AnswerApp());
 }
 
 class App extends StatelessWidget {
@@ -27,7 +27,7 @@ class AnswerApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }
