@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:ui_challenge/app_theme.dart';
 import 'package:ui_challenge/screens/screens.dart';
 
 void main() {
@@ -11,9 +12,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'UIChallenge',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppTheme.light,
       home: LoginScreen(),
     );
   }
@@ -24,9 +23,7 @@ class AnswerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Answer',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppTheme.light,
       home: HomeScreen(),
     );
   }
