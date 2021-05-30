@@ -11,7 +11,7 @@ class AppTheme {
       textTheme: TextTheme(
         headline6: TextStyle(
           color: Colors.grey.shade800,
-          fontSize: 20,
+          fontSize: 18,
           fontWeight: FontWeight.w500,
         ),
       ),
