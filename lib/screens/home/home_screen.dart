@@ -45,7 +45,8 @@ class _Item extends StatelessWidget {
 
 enum _ScreenType {
   Login,
-  ColorPick
+  ColorPick,
+  Messages,
 }
 
 extension _ScreenTypeExtension on _ScreenType {
@@ -55,6 +56,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return 'ログイン';
       case _ScreenType.ColorPick:
         return '色選択';
+      case _ScreenType.Messages:
+        return 'メッセージ一覧';
     }
   }
 
@@ -64,6 +67,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return 'よくあるログイン画面のレイアウト\nColumnなど基本的なWidgetの使い方について';
       case _ScreenType.ColorPick:
         return '好きな色を選択する画面のレイアウト\n動的なWidgetの生成とStatefulWidgetについて';
+      case _ScreenType.Messages:
+        return 'LINEのメッセージ一覧画面っぽいレイアウト\nListViewを使った同じ要素をリスト形式で繰り返すようなUIについて';
     }
   }
 
@@ -73,6 +78,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return LoginScreen();
       case _ScreenType.ColorPick:
         return ColorPickScreen();
+      case _ScreenType.Messages:
+        return MessagesScreen();
     }
   }
 }

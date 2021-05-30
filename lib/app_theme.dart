@@ -12,7 +12,7 @@ class AppTheme {
         headline6: TextStyle(
           color: Colors.grey.shade800,
           fontSize: 18,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
       ),
       // AppBar のアイコンの色
