@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_challenge/utils/utils.dart';
 
 class MessagesScreen extends StatelessWidget {
-  final users = Stub.users + Stub.users;
+  final users = Stub.users;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class MessagesScreen extends StatelessWidget {
         itemCount: users.length,
         itemBuilder: (_, index) {
           final user = users[index];
-          return MessagesCell(title: user.name, avatarURL: user.avatarURL, content: user.message);
+          return MessagesCell(name: user.name, avatarURL: user.avatarURL, message: user.message, updatedDate: user.updatedDate,);
         },
       ),
     );
@@ -23,14 +23,16 @@ class MessagesScreen extends StatelessWidget {
 }
 
 class MessagesCell extends StatelessWidget {
-  final String title;
+  final String name;
   final String avatarURL;
-  final String content;
+  final String message;
+  final String updatedDate;
 
   MessagesCell({
-    required this.title,
+    required this.name,
     required this.avatarURL,
-    required this.content,
+    required this.message,
+    required this.updatedDate,
   });
 
   @override
@@ -57,18 +59,27 @@ class MessagesCell extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  title,
+                  name,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 Text(
-                  content,
+                  message,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
               ],
+            ),
+          ),
+          const SizedBox(width: 8,),
+          // NOTE: Updated date
+          Text(
+            updatedDate,
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 12,
             ),
           ),
         ],
