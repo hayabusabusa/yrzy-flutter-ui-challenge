@@ -47,6 +47,7 @@ enum _ScreenType {
   Login,
   ColorPick,
   Messages,
+  Tweets,
 }
 
 extension _ScreenTypeExtension on _ScreenType {
@@ -58,6 +59,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return '色選択';
       case _ScreenType.Messages:
         return 'メッセージ一覧';
+      case _ScreenType.Tweets:
+        return 'ツイート一覧';
     }
   }
 
@@ -69,6 +72,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return '好きな色を選択する画面のレイアウト\n動的なWidgetの生成とStatefulWidgetについて';
       case _ScreenType.Messages:
         return 'LINEのメッセージ一覧画面っぽいレイアウト\nListViewを使った同じ要素をリスト形式で繰り返すようなUIについて';
+      case _ScreenType.Tweets:
+        return 'Twitterのツイート一覧画面っぽいレイアウト\nListViewで少し複雑なUIを作る';
     }
   }
 
@@ -80,6 +85,8 @@ extension _ScreenTypeExtension on _ScreenType {
         return ColorPickScreen();
       case _ScreenType.Messages:
         return MessagesScreen();
+      case _ScreenType.Tweets:
+        return TweetsScreen();
     }
   }
 }
