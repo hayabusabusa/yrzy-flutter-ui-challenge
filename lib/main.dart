@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ui_challenge/screens/how_to_screen.dart';
+import 'package:ui_challenge_internal/screens.dart';
 
 import 'package:ui_challenge/app_theme.dart';
-import 'package:ui_challenge/screens/screens.dart';
 
 void main() {
-  runApp(AnswerApp());
+  runApp(App());
 }
 
 class App extends StatelessWidget {
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'UIChallenge',
       theme: AppTheme.light,
-      home: LoginScreen(),
+      home: HowToScreen(),
     );
   }
 }
@@ -24,7 +25,7 @@ class AnswerApp extends StatelessWidget {
     return MaterialApp(
       title: 'Answer',
       theme: AppTheme.light,
-      home: HomeScreen(),
+      home: InternalHomeScreen(),
     );
   }
 }

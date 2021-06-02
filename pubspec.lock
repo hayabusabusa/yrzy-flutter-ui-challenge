@@ -147,10 +147,10 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "0e2238f8c21790134cb5bfbc19c2de21c01aeeef"
+      resolved-ref: ad6648e6df5891513de17ee1762aed97bb0e9493
       url: "https://github.com/hayabusabusa/yrzy-flutter-ui-challenge-internal.git"
     source: git
-    version: "0.0.1"
+    version: "0.0.2"
   vector_math:
     dependency: transitive
     description:
