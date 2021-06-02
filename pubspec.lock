@@ -142,6 +142,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
+  ui_challenge_internal:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "0e2238f8c21790134cb5bfbc19c2de21c01aeeef"
+      url: "https://github.com/hayabusabusa/yrzy-flutter-ui-challenge-internal.git"
+    source: git
+    version: "0.0.1"
   vector_math:
     dependency: transitive
     description:
@@ -151,3 +160,4 @@ packages:
     version: "2.1.0"
 sdks:
   dart: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
