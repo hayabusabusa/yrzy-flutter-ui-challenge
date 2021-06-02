@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/screens/how_to_screen.dart';
 import 'package:ui_challenge_internal/screens.dart';
 
 import 'package:ui_challenge/app_theme.dart';
+import 'package:ui_challenge/screens/how_to_screen.dart';
 
 void main() {
   runApp(App());
