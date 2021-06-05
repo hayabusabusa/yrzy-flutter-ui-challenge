@@ -5,6 +5,7 @@ import 'package:ui_challenge/app_theme.dart';
 import 'package:ui_challenge/screens/how_to_screen.dart';
 
 void main() {
+  
   runApp(App());
 }
 
