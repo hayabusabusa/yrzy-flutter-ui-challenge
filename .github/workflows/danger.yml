@@ -5,7 +5,7 @@ on:
     types: [ opened, synchronize, edited ]
     branches:
       - main
-      - 'answer/**'
+
 jobs:
   danger:
     runs-on: ubuntu-latest
