@@ -32,7 +32,7 @@ class SecondScreen extends StatelessWidget {
              ),
             ],
           ),
-         Row(
+          Row(
            children: [
              Container(
                height: 56,
@@ -42,17 +42,16 @@ class SecondScreen extends StatelessWidget {
              Expanded(
                child: Container(
                  height: 56,
-                 width: 56,
                  color: Colors.orange,
                ),
-               ),
+              ),
              Container(
                height: 56,
                width: 56,
                color: Colors.yellow,
              )  
            ],
-         )
+          )
         ],
       )
     );
